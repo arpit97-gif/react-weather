@@ -1,0 +1,76 @@
+ *{
+    margin:0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+
+ body
+ {
+   font-family: Arial, Helvetica, sans-serif;
+ }
+
+.app
+{
+background-image: url('./assests/cloud.jpg');
+background-size: cover;
+background-position: bottom;
+
+}
+
+.app-warm
+{
+  background-image: url(./assests/warm.jpg);
+  background-size: cover;
+background-position: bottom;
+}
+
+
+main
+{
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.75));
+ padding:5%;
+}
+
+
+.search .search-bar
+{
+display: block;
+width: 80%;
+padding:1%;
+appearance: none;
+border: none;
+outline: none;
+
+}
+
+
+.search .search-bar:focus
+{
+  background-color: gray;
+  color: beige;
+
+}
+.location-box
+{
+  text-shadow:2px 2px black;
+  color: aliceblue;
+  padding: 10%;
+  text-align: center;
+  font-size: 150%;
+  font-weight: 800;
+  font-style: italic;
+  }
+  
+  .temp
+  {
+    position: relative;
+    display: inline-block;
+    margin: 30px auto;
+    background-color:rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    font-size: 102px;
+      padding:15px 25px;
+      text-shadow: 2px 2px black;
+      box-shadow: 3px 6px black;
+  }
