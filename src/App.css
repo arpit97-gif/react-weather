@@ -8,7 +8,9 @@
  {
    font-family: Arial, Helvetica, sans-serif;
  }
-
+h2{
+    color:white;
+}
 .app
 {
 background-image: url('./assests/cloud.jpg');
