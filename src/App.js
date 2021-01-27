@@ -48,7 +48,8 @@ if(evt.key==="Enter")
  : 'app' }>
       <main>
         <div className="search">
-          <input type="text" placeholder="ENTER the location ..." className="search-bar"
+         <center> <h2>WEATHER DETECTION</h2></center>
+          <input type="text" placeholder="ENTER THE LOCATION...." className="search-bar"
           onChange={e => setQurey(e.target.value)}
           value={query}
           onKeyPress={search}
