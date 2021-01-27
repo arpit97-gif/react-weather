@@ -28,19 +28,20 @@ if(evt.key==="Enter")
 }
   }
 
-  const dateBuilder =(d)=>
+ const dateBuilder =(d)=>
   {
     let months = ["january", "February" ,"March", "April", "May", "June", "July","August","September","October","November","December"];
 
     let days = ["Sunday" ,"Monday", "Tuesday", "wednesday","Thursday", "Friday","Saturday"];
  
     let day =days[d.getDay()];
- let date = d.getDate();
- let month =months[d.getMonth()];
- let year =d.getFullYear();
-
+    let date = d.getDate();
+    let month =months[d.getMonth()];
+    let year =d.getFullYear();
  return `${day} ${date} ${month} ${year}`
   }
+
+  
   return (
     <div className=
     {
@@ -48,8 +49,8 @@ if(evt.key==="Enter")
  : 'app' }>
       <main>
         <div className="search">
-         <center> <h2>WEATHER DETECTION</h2></center>
-          <input type="text" placeholder="ENTER THE LOCATION...." className="search-bar"
+          <h2>WEATHER SEARCH</h2>
+          <input type="text" placeholder="ENTER THE LOCATION HERE..." className="search-bar"
           onChange={e => setQurey(e.target.value)}
           value={query}
           onKeyPress={search}
@@ -63,8 +64,7 @@ if(evt.key==="Enter")
   <div className="location">{weather.name},{weather.sys.country} </div>
 
 
-<div className="date">{dateBuilder(new Date())}
-</div>
+<div className="date"> {dateBuilder(new Date())} </div>
 
 <div className="weather-box">
  <div className="temp">
@@ -80,6 +80,4 @@ if(evt.key==="Enter")
     </div>
 
   );
-}
-
-export default App;
+}export default App;
